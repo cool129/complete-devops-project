@@ -1,6 +1,6 @@
 ---
     
-name: Complete DevOps Project Pipeline
+name: Complete DevOps Project Pipeline Test
 
 on:
   push:
