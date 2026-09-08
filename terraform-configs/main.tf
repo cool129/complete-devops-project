@@ -1,10 +1,14 @@
-terraform{
-    required_providers {
-      minikube = {
-        source = "scott-the-programmer/minikube"
-        version = "0.4.2"
-        }
+terraform {
+  required_providers {
+    minikube = {
+      source  = "scott-the-programmer/minikube"
+      version = "0.4.2"
     }
+    helm = {
+      source  = "hashicorp/helm"
+      version = "2.17.0"
+    }
+  }
 }
 
 provider "minikube" {
@@ -13,7 +17,7 @@ provider "minikube" {
 
 resource "minikube_cluster" "minikube_docker" {
     driver = "docker"
-    cluster_name = "devops-project"
+    cluster_name = "complete-devops-project"
     addons = [
         "default-storageclass",
         "storage-provisioner"

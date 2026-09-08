@@ -25,4 +25,13 @@ jobs:
       - name: Push to Dockerhub
         run: |
           docker push geo2face/complete-devops-project:${{ env.SHORT_SHA }}
-      
+      - name: Configure Git Author
+        run: |
+          git config --local user.email "hello@geo2face.com"
+          git config --local user.name "cool129"
+      - name: Update Helm Chart with new image tag
+        run: |
+          sed -i "s/tag:.*/tag: ${{ env.SHORT_SHA }}/" ./complete-devops-project-time-printer/values.yaml
+          git add ./complete-devops-project-time-printer/values.yaml
+          git commit -m "Updated image tag to ${{ env.SHORT_SHA }}"
+          git push
