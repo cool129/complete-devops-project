@@ -1,6 +1,6 @@
 image:
   repository: geo2face/devops-project
-  tag: be1c461
+  tag: f26f5d8
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP
