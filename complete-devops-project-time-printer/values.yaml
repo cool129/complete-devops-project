@@ -1,5 +1,5 @@
 image:
-  repository: geo2face/complete-devops-project
+  repository: geo2face/devops-project
   tag: be1c461
   pullPolicy: IfNotPresent
 service:
