@@ -2,7 +2,7 @@ image:
   repository: geo2face/devops-project
   tag: 4e5f1cf
   pullPolicy: IfNotPresent
-services:
+service:
   type: ClusterIP
   port: 8080
 ingress:
