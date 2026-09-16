@@ -1,13 +1,13 @@
 (1) Creating a Python web app with Flask.
 
-Setting up Minikube with Terraform as your Kubernetes environment.
+(2) Setting up Minikube with Terraform as your Kubernetes environment.
 
-Writing a Dockerfile to containerize your Python application.
+(3) Writing a Dockerfile to containerize your Python application.
 
-Automating Docker image builds and pushes with GitHub Actions.
+(4) Automating Docker image builds and pushes with GitHub Actions.
 
-Creating a Helm chart for Kubernetes deployments.
+(5) Creating a Helm chart for Kubernetes deployments.
 
-Deploying and syncing applications using ArgoCD with GitOps principles.
+(6) Deploying and syncing applications using ArgoCD with GitOps principles.
 
-Testing the pipeline end-to-end with updates to your app.
+(7) Testing the pipeline end-to-end with updates to your app.
